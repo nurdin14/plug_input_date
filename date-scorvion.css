@@ -1,0 +1,134 @@
+.tbl-wrapper-date {
+    display: none;
+    position: absolute;
+    z-index: 200;
+    bottom: -200px;
+    height: 200px;
+    grid-template-columns: 300px 200px auto;
+    right: -320px;
+}
+
+.tbl-date {
+    width: 10%;
+    text-align: center;
+    font-size: 9pt;
+    background-color: #fafafa;
+    border: 0.8px solid #9ba1a1;
+}
+
+.tbl-date thead tr:nth-child(1) {
+    background-color: #353b48;
+    color: #fafafa;
+}
+.tbl-date thead tr:nth-child(2) {
+    background-color: #353b48;
+    color: #fafafa;
+}
+
+.tbl-date th {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.tbl-date th,
+td {
+    border: 0.5px solid #bdc3c7;
+    position: relative;
+}
+
+.tbl-date td:hover {
+    background-color: #778ca3;
+    cursor: pointer;
+    color: #fafafa;
+}
+
+.today {
+    background-color: #353b48;
+    color: #fafafa;
+}
+
+.printed-date:hover {
+    cursor: pointer;
+}
+
+.kontent-wrapper {
+    height: 200px;
+    overflow: scroll;
+    display: none;
+    background-color: #fafafa;
+    margin-left: -40%;
+}
+.tahun,
+.bulan {
+    text-align: center;
+    font-size: 9pt;
+}
+
+.bulan {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.bulan-item {
+    padding: 10px 0px 10px;
+    font-size: 9pt;
+    text-align: center;
+}
+
+#prev:hover,
+#next:hover {
+    cursor: pointer;
+}
+
+#prev:hover,
+#next:hover {
+    cursor: pointer;
+}
+
+.bulan-item:hover {
+    cursor: pointer;
+    background-color: #778ca3;
+    color: #fafafa;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8f8f8;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #cccaca;
+}
+
+@media only screen and (max-width: 768px) {
+    .tbl-wrapper-date {
+        display: none;
+        position: absolute;
+        z-index: 200;
+        bottom: -200px;
+        height: -50px;
+        width: -50px;
+        grid-template-columns: 300px 200px auto;
+        right: -290px;
+    }
+
+    .kontent-wrapper {
+        height: 200px;
+        overflow: scroll;
+        display: none;
+        position: absolute;
+        z-index: 100;
+        left: -220px;
+        background-color: #fafafa;
+        font-size: 9pt;
+        text-align: center;
+    }
+}
